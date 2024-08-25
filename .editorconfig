@@ -1,0 +1,31 @@
+# Indica que este é o arquivo EditorConfig raiz
+root = true
+
+# Aplicável a todos os arquivos
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+
+# Configurações específicas para arquivos JavaScript
+[*.js]
+indent_size = 2
+
+# Configurações específicas para arquivos TypeScript
+[*.ts]
+indent_size = 2
+
+# Configurações específicas para arquivos JSON
+[*.json]
+indent_size = 2
+
+# Configurações específicas para arquivos Markdown
+[*.md]
+trim_trailing_whitespace = false
+
+# Configurações específicas para arquivos YAML
+[*.yml, *.yaml]
+indent_size = 2
