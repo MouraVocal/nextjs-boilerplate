@@ -5,9 +5,19 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "prettier"
+    "prettier",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/dom"
+  ],
+  "plugins": [
+    "testing-library",
+    "jest-dom"
   ],
   "rules": {
     "react/react-in-jsx-scope": "off"
+  },
+  "env": {
+    "jest": true
   }
 }
