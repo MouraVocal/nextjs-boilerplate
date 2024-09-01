@@ -1,21 +1,21 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import { Home } from '.'
+import { Main } from '.'
 
-describe('Home', () => {
+describe('Main', () => {
   it('renders a heading', () => {
-    render(<Home />)
+    render(<Main />)
 
-    const heading = screen.getByRole('heading', { level: 1 })
+    const main = screen.queryByRole('main')
 
-    expect(heading).toBeInTheDocument()
+    expect(main).toBeInTheDocument()
   })
 
   it('should have text', () => {
-    render(<Home />)
+    render(<Main />)
 
-    const heading = screen.getByRole('heading', { level: 1 })
+    const main = screen.queryByRole('main')
 
-    expect(heading).toHaveTextContent('Home')
+    expect(main).toHaveTextContent('Main')
   })
 })
