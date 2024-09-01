@@ -7,6 +7,7 @@ const createJestConfig = nextJest({
 const config: Config = {
   clearMocks: true,
   collectCoverage: true,
+  collectCoverageFrom: ["src/**/*.ts(x)?", "!src/app/**", "!src/lib/registry.tsx"],
   coverageDirectory: "coverage",
   coverageProvider: 'v8',
   testEnvironment: 'jsdom',
