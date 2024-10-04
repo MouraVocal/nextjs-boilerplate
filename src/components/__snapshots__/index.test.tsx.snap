@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main should match snapshot 1`] = `
+.c0 {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+<main
+  class="c0"
+>
+  Main
+</main>
+`;
